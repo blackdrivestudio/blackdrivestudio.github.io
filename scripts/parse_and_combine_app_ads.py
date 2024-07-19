@@ -23,7 +23,7 @@ def main():
     combined_text = combine_texts(text1, text2)
 
     output_file = "app-ads.txt"
-    if os.path.exists(output_file):
+    if os.path.exists("..", output_file):
         with open(output_file, 'r') as file:
             existing_text = file.read()
     else:
