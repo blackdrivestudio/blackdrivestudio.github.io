@@ -1,4 +1,4 @@
-name: Bi-Daily Parse and Combine
+name: Daily Parse and Combine
 
 on:
   schedule:
