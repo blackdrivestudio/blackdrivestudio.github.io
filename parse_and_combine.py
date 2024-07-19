@@ -19,7 +19,7 @@ def main():
     text2 = fetch_text(url2)
     combined_text = combine_texts(text1, text2)
 
-    output_file = "combined_text.txt"
+    output_file = "app-ads.txt"
     if os.path.exists(output_file):
         with open(output_file, 'r') as file:
             existing_text = file.read()
