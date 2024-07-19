@@ -1,8 +1,8 @@
-name: Weekly Parse and Combine
+name: Bi-Daily Parse and Combine
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Runs at midnight every Sunday
+    - cron: '0 0 */2 * *'  # Runs at midnight every two days
   workflow_dispatch:
 
 jobs:
@@ -12,8 +12,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Set up Python
       uses: actions/setup-python@v3
@@ -25,6 +23,9 @@ jobs:
 
     - name: Run parse and combine script
       id: parse_combine
+      env:
+        URL1: ${{ secrets.URL1 }}
+        URL2: ${{ secrets.URL2 }}
       run: python parse_and_combine.py
 
     - name: Commit and push changes
@@ -33,10 +34,10 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git fetch origin
-        git checkout ${{ github.ref_name }}
-        git pull origin ${{ github.ref_name }}
+        git checkout main
+        git pull origin main
         git add app-ads.txt
-        git commit -m "Update app-ads.txt from weekly parse"
+        git commit -m "Update app-ads.txt from bi-daily parse"
         git push origin HEAD:main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
