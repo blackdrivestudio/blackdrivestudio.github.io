@@ -11,8 +11,8 @@ def combine_texts(text1, text2):
     return text1 + "#\n" + text2
 
 def main():
-    url1 = os.getenv('URL1')
-    url2 = os.getenv('URL2')
+    url1 = os.getenv('APP_ADS_URL1')
+    url2 = os.getenv('APP_ADS_URL2')
     
     if not url1 or not url2:
         print("URLs are not set properly.")

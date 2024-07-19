@@ -24,9 +24,9 @@ jobs:
     - name: Run parse and combine script
       id: parse_combine
       env:
-        URL1: ${{ secrets.URL1 }}
-        URL2: ${{ secrets.URL2 }}
-      run: python parse_and_combine_app_ads.py
+        APP_ADS_URL1: ${{ secrets.APP_ADS_URL1 }}
+        APP_ADS_URL2: ${{ secrets.APP_ADS_URL2 }}
+      run: python scripts/parse_and_combine_app_ads.py
 
     - name: Commit and push changes
       if: steps.parse_combine.outputs.changes_detected == 'true'
@@ -34,10 +34,10 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git fetch origin
-        git checkout main
-        git pull origin main
+        git checkout ${{ github.ref_name }}
+        git pull origin ${{ github.ref_name }}
         git add app-ads.txt
         git commit -m "Update app-ads.txt from daily parse"
-        git push origin HEAD:main
+        git push origin HEAD:${{ github.ref_name }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
