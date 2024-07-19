@@ -1,4 +1,4 @@
-name: Daily Parse and Combine
+name: Daily Parse and Combine App Ads
 
 on:
   schedule:
@@ -26,7 +26,7 @@ jobs:
       env:
         URL1: ${{ secrets.APP_ADS_URL1 }}
         URL2: ${{ secrets.APP_ADS_URL2 }}
-      run: python parse_and_combine.py
+      run: python parse_and_combine_app_ads.py
 
     - name: Commit and push changes
       if: steps.parse_combine.outputs.changes_detected == 'true'
@@ -37,7 +37,7 @@ jobs:
         git checkout main
         git pull origin main
         git add app-ads.txt
-        git commit -m "Update app-ads.txt from bi-daily parse"
+        git commit -m "Update app-ads.txt from daily parse"
         git push origin HEAD:main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
