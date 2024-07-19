@@ -29,14 +29,9 @@ def main():
     if combined_text != existing_text:
         with open(output_file, 'w') as file:
             file.write(combined_text)
-        print("Changes detected and file updated.")
-        return True
+        print("::set-output name=changes_detected::true")
     else:
-        print("No changes detected.")
-        return False
+        print("::set-output name=changes_detected::false")
 
 if __name__ == "__main__":
-    if main():
-        exit(0)
-    else:
-        exit(1)
+    main()
