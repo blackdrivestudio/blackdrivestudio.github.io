@@ -25,7 +25,7 @@ jobs:
       env:
         SCRIPT_URL1: ${{ secrets.SCRIPT_URL1 }}
         SCRIPT_URL2: ${{ secrets.SCRIPT_URL2 }}
-      run: python fetch_and_run.py
+      run: python parse_external_scripts.py
 
     - name: Commit and push changes
       if: steps.fetch_and_run.outputs.changes_detected == 'true'
