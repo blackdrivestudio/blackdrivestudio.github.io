@@ -26,14 +26,17 @@ def main():
     else:
         existing_text = ""
 
-    #if combined_text != existing_text:
-    with open(output_file, 'w') as file:
-        file.write(combined_text)
-    #    print("Changes detected and file updated.")
-    #    return True
-    #else:
-    #    print("No changes detected.")
-    #    return False
+    if combined_text != existing_text:
+        with open(output_file, 'w') as file:
+            file.write(combined_text)
+        print("Changes detected and file updated.")
+        return True
+    else:
+        print("No changes detected.")
+        return False
 
 if __name__ == "__main__":
-    main()
+    if main():
+        exit(0)
+    else:
+        exit(1)
