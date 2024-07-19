@@ -23,16 +23,10 @@ jobs:
 
     - name: Run parse and combine script
       id: parse_combine
-      run: |
-        python parse_and_combine.py
-      continue-on-error: true
-
-    - name: Check for changes
-      id: changes
-      run: echo "::set-output name=changes_detected::$(steps.parse_combine.outputs.changes_detected)"
+      run: python parse_and_combine.py
 
     - name: Commit and push changes
-      if: steps.changes.outputs.changes_detected == 'true'
+      if: env.CHANGES_DETECTED == 'true'
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
