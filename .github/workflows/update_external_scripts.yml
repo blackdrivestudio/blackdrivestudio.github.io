@@ -2,7 +2,7 @@ name: Update External Scripts
 
 on:
   schedule:
-    - cron: '0 0 */1 * *'  # Runs at midnight every two days
+    - cron: '* * * * *'
   workflow_dispatch:
 
 jobs:
