@@ -1,8 +1,8 @@
-name: Daily Parse and Combine App Ads
+name: Parse and Combine App Ads Daily
 
 on:
   schedule:
-    - cron: '0 0 */1 * *'  # Runs at midnight every day
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
