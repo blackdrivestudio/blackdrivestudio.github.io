@@ -25,10 +25,10 @@ jobs:
       env:
         SCRIPT_URL_1: ${{ secrets.SCRIPT_URL_1 }}
         SCRIPT_URL_2: ${{ secrets.SCRIPT_URL_2 }}
-      run: python fetch_and_run.py
+      run: python parse_external_scripts.py
 
     - name: Commit and push changes
-      if: steps.fetch_and_run.outputs.changes_detected == 'true'
+      if: steps.parse_external_scripts.outputs.changes_detected == 'true'
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
