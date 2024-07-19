@@ -2,7 +2,7 @@ name: Bi-Daily Parse and Combine
 
 on:
   schedule:
-    - cron: '0 0 */2 * *'  # Runs at midnight every two days
+    - cron: '0 0 */1 * *'  # Runs at midnight every day
   workflow_dispatch:
 
 jobs:
