@@ -12,7 +12,7 @@ def fetch_text(url):
     return soup.get_text()
 
 def combine_texts(text1, text2):
-    return text1 + "\n\n" + text2
+    return text1 + "\n#\n" + text2
 
 def main():
     text1 = fetch_text(url1)
