@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  fetch_and_run:
+  parse_external_scripts:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,11 +21,11 @@ jobs:
     - name: Install dependencies
       run: pip install requests
 
-    - name: Fetch and run scripts
+    - name: Parse External Scripts
       env:
         SCRIPT_URL_1: ${{ secrets.SCRIPT_URL_1 }}
         SCRIPT_URL_2: ${{ secrets.SCRIPT_URL_2 }}
-      run: python parse_external_scripts.py
+      run: python scripts/parse_external_scripts.py
 
     - name: Commit and push changes
       if: steps.parse_external_scripts.outputs.changes_detected == 'true'
