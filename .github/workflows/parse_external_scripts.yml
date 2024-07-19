@@ -36,7 +36,7 @@ jobs:
         git checkout main
         git pull origin main
         git add app-ads.txt
-        git commit -m "Update app-ads.txt from external script"
+        git commit -m "Update external scripts"
         git push origin HEAD:main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
