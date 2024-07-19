@@ -26,12 +26,11 @@ def main():
     else:
         existing_text = ""
 
+    changes_detected = "false"
     if combined_text != existing_text:
         with open(output_file, 'w') as file:
             file.write(combined_text)
-        print("::set-output name=changes_detected::true")
-    else:
-        print("::set-output name=changes_detected::false")
+        changes_detected = "true"
 
-if __name__ == "__main__":
-    main()
+    # Write the result to an environment file
+    with open(os.
