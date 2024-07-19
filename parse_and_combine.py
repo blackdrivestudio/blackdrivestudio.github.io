@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import os
 
 # URLs to fetch
-url1 = "https://github.com/PME-Crew/app-ads.txt/blob/master/app-ads.txt"
+url1 = "https://raw.githubusercontent.com/PME-Crew/app-ads.txt/master/app-ads.txt"
 url2 = "https://cas.ai/app-ads.txt"
 
 def fetch_text(url):
