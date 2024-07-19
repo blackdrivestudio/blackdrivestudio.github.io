@@ -30,8 +30,11 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git fetch origin
+        git checkout ${{ github.head_ref }}
+        git pull origin ${{ github.head_ref }}
         git add app-ads.txt
         git commit -m "Update app-ads.txt from weekly parse"
-        git push
+        git push origin HEAD:${{ github.head_ref }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
