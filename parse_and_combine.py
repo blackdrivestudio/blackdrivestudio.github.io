@@ -33,4 +33,8 @@ def main():
         changes_detected = "true"
 
     # Write the result to an environment file
-    with open(os.
+    with open(os.getenv('GITHUB_ENV'), 'a') as env_file:
+        env_file.write(f"CHANGES_DETECTED={changes_detected}\n")
+
+if __name__ == "__main__":
+    main()
