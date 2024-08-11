@@ -7,20 +7,25 @@ def fetch_text(url):
     soup = BeautifulSoup(response.content, 'html.parser')
     return soup.get_text()
 
-def combine_texts(text1, text2):
-    return text1 + "#\n" + text2
+def combine_texts(texts):
+    return "#\n".join(texts)
 
 def main():
-    url1 = os.getenv('APP_ADS_URL1')
-    url2 = os.getenv('APP_ADS_URL2')
+    urls = []
+    index = 1
+    while True:
+        url = os.getenv(f'APP_ADS_URL{index}')
+        if not url:
+            break
+        urls.append(url)
+        index += 1
     
-    if not url1 or not url2:
-        print("URLs are not set properly.")
+    if not urls:
+        print("No URLs are set properly.")
         return
     
-    text1 = fetch_text(url1)
-    text2 = fetch_text(url2)
-    combined_text = combine_texts(text1, text2)
+    texts = [fetch_text(url) for url in urls]
+    combined_text = combine_texts(texts)
 
     output_file = "app-ads.txt"
     if os.path.exists(output_file):
@@ -35,8 +40,7 @@ def main():
             file.write(combined_text)
         changes_detected = "true"
 
-    # Write the result to an environment file
     print(f"::set-output name=changes_detected::{changes_detected}")
 
-if __name__ == "__main__":
+if name == "main":
     main()
