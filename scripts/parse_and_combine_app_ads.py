@@ -17,7 +17,7 @@ def main():
         print("No URLs are set properly.")
         return
     
-    urls = urls.split(',')
+    urls = urls.split('\n')
     
     texts = [fetch_text(url.strip()) for url in urls]
     combined_text = combine_texts(texts)
