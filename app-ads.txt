@@ -2489,3 +2489,353 @@ rhebus.works, 8978398251, RESELLER
 smaato.com, 1100057426, DIRECT, 07bcf65f187117b4
 thunder-monetize.com, 1252316774, RESELLER
 video.unrulymedia.com, 251620492, RESELLER
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Traff - Short Link Service
+
+
+
+
+
+
+
+
+TRAFF OÜ
+
+
+
+
+
+
+ENG
+|
+RUS
+
+
+
+Login
+Sign up
+ 
+
+
+
+
+
+
+
+
+
+Homepage
+
+For advertisers
+
+
+Cost metrics
+
+
+
+For publishers
+Blog
+
+Contact Us
+
+
+About Us
+
+
+
+
+Careers
+
+
+SEO-Specialist
+Front-end developer
+Seller of traffic
+
+
+
+
+Services
+
+
+Short links
+File Storage
+Text hosting
+
+
+
+
+
+
+
+
+
+
+Text hosting
+Enter your text below and it will be uploaded with a randomly generated URL that only you will know (50000 character limit)
+
+
+#=== AudienceNetwork
+facebook.com, 805069172997110, DIRECT, c3e20eee3f780d68
+facebook.com, 1081332032712445, DIRECT, c3e20eee3f780d68
+Optional Settings
+Admin password (needed to edit or delete)
+
+Viewing password (needed to view)
+
+Day limit (days before auto deletion, blank = 30 days)
+
+
+
+
+
+		Preformatted text
+	
+
+
+		Make links clickable
+	
+
+
+		Enable BBCode (List BB codes)
+
+
+
+Bold [b]Hello[/b]
+Underlined  [u]Hello[/u] 
+Italics  [i]Hello[/i] 
+Strikethrough  [s]Hello[/s] 
+Forced Linebreak  [br] 
+Colors  [color=red]Hello[/color]
+				[color=#FF0000]Hello[/color] 
+Font Size  [size=9]Hello[/size] 
+Font Type  [font=Verdana]Hello[/font] 
+Alignment  [align=left]left aligned text[/align] 
+				[align=center]centered text[/align] 
+				[center]centered text[/center] 
+				[align=right]right aligned text[/align] 
+Quotes
+				[quote]Hello[/quote] 
+				[quote=Name]Hello[/quote] 
+Code  [code]Hello[/code] (text between code tags is not modified)
+Links  [url]http://www.example.com/[/url] 
+				[url=http://www.example.com/]Example[/url] 
+Email  [email]user@domain.com[/email] 
+				 [email=user@domain.com]email me[/email] 
+Images  [img]http://domain.com/image.jpg[/img] 
+
+
+
+
+Save text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Login
+
+
+
+
+
+
+Sign in
+
+Not a member yet?
+Create a new account right now!
+
+
+Forgot password
+
+
+
+
+
+
+
+Fill out the registration form:
+
+
+
+
+Please check the highlighted fields
+
+
+
+
+
+
+
+
+
+Registration
+
+
+
+
+
+
+
+
++37254546654 
+
+
+Or send us a message:
+
+Please check the highlighted fields
+
+
+
+
+
+
+
+
+
+
+Send
+
+
+
+
+
+
+Social Media
+
+ 
+ 
+ 
+ 
+ 
+
+Email access
+
+
+
+
+
+
+
+
+
+To companies economical and profitable  opportunity to obtain new business leads  and sales from best quality traffic.
+
+
+Main
+
+For advertisers
+For publishers
+Cost metrics
+Blog
+About us
+Contacts
+
+Careers
+Payment for services
+White Paper ICO
+MediaKit
+
+
+
+For clients
+
+Terms and conditions
+Requirements for ads
+Requirements for sites
+Technical requirements for banners
+Requirements for video ads
+Refund policy
+Short link service
+File Storage
+
+Design solutions
+
+
+
+Contacts
+
++37254546654 
+contact@traff.co
+Traff skype
+Ahtri tn 8, 10151, Tallinn, Estonia
+Reg. code: 12854144
+VAT: EE101935469
+Contact us
+
+
+
+
+
+
+
+We accept
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Copyright 2015-2024
+Traff OÜ All rights reserved.
+Privacy and Data Use Policy
+ | 
+GDPR
+
+
+
+
+
+
+Allow Cookies
+This website uses cookies to improve your user experience. By continuing to browse the site you are agreeing to our use of cookies.
+I accept
+Find out more about our privacy policy »
+
+
+
+
+
+
