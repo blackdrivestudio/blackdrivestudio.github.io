@@ -23,9 +23,6 @@ jobs:
 
     - name: Run parse and combine script
       id: parse_and_combine
-      env:
-        APP_ADS_URL1: ${{ secrets.APP_ADS_URL1 }}
-        APP_ADS_URL2: ${{ secrets.APP_ADS_URL2 }}
       run: python scripts/parse_and_combine_app_ads.py
 
     - name: Commit and push changes
