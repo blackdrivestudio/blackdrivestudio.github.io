@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+import re
 
 def fetch_text(url):
     response = requests.get(url)
@@ -17,9 +18,9 @@ def main():
         print("No URLs are set properly.")
         return
     
-    urls = urls.split('\n')
+    urls = re.split(r'[,\n]+', urls.strip())
     
-    texts = [fetch_text(url.strip()) for url in urls]
+    texts = [fetch_text(url.strip()) for url in urls if url.strip()]
     combined_text = combine_texts(texts)
 
     output_file = "app-ads.txt"
