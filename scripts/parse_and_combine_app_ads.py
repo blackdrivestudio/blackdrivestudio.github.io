@@ -42,5 +42,5 @@ def main():
 
     print(f"::set-output name=changes_detected::{changes_detected}")
 
-if name == "main":
+if __name__ == "__main__":
     main()
