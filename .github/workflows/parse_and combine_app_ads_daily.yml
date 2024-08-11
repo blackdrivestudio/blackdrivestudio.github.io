@@ -23,6 +23,8 @@ jobs:
 
     - name: Run parse and combine script
       id: parse_and_combine
+      env:
+        SOME_CONSTANT: "not-empty-value" # Константне значення для уникнення помилки
       run: python scripts/parse_and_combine_app_ads.py
 
     - name: Commit and push changes
